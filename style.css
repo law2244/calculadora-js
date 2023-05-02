@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto;
+    background-color: #016494;
+    color: #E8F1F3
+}
+h1{
+    color: #E8F1F3;
+    font-family: lato;
+}
+input{
+    display: block;
+    margin-top: 20px;
+    border: 0 ;
+    outline: 0;
+    border-bottom: 2px solid #1C99E0;
+    width: 18vw;
+    background-color: transparent;
+    color: #E8F1F3;
+}
+.escolha_operacao{
+    display: grid;
+    grid-template-columns: repeat( 2 , auto);
+    gap: 20px
+}
+.input_valor h3{
+    color: #E8F1F3;
+    font-family: lato;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px
+}
+.input_valor > h3 >span{
+    background-color: #E8F1F3;
+    clip-path: polygon(2% 2%, 98% 4%, 96% 97%, 0 100%);
+    padding: 0 0.7rem;
+    color: #247BA0
+}
+
+input::placeholder{
+    color: #E8F1F3;
+}
+.input_valor p{
+    font-size: 14px;
+    margin-top: 30px
+}
+.input_valor p > i{
+    margin-left: 0.5rem
+}
+.escolha_operacao{
+    margin-top: 30px;
+}
+button{
+    background-color: #247BA0;
+    border: 0;
+    color: #E8F1F3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 100px;
+}
+button:hover{
+    transform: scale(1.2)
+}
