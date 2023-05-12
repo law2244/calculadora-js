@@ -7,64 +7,69 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Roboto;
-    background-color: #016494;
-    color: #E8F1F3
+    font-family: roboto;
+    background-color: #1C99E0
+    
 }
-h1{
-    color: #E8F1F3;
-    font-family: lato;
+.inputOperacao{
+    display: none;
 }
-input{
-    display: block;
-    margin-top: 20px;
-    border: 0 ;
-    outline: 0;
-    border-bottom: 2px solid #1C99E0;
-    width: 18vw;
-    background-color: transparent;
-    color: #E8F1F3;
-}
-.escolha_operacao{
-    display: grid;
-    grid-template-columns: repeat( 2 , auto);
-    gap: 20px
-}
-.input_valor h3{
-    color: #E8F1F3;
-    font-family: lato;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 40px
-}
-.input_valor > h3 >span{
-    background-color: #E8F1F3;
-    clip-path: polygon(2% 2%, 98% 4%, 96% 97%, 0 100%);
-    padding: 0 0.7rem;
-    color: #247BA0
+.inputOperacaoJs{
+    display: block;;
 }
 
-input::placeholder{
-    color: #E8F1F3;
+.inputOperacaoJs input{
+    border: 0;
+    border-bottom: 3px solid #247BA0;
+    background-color: transparent;
+    outline: 0;
+    margin-bottom: 20px;
+    width: 12vw;
+    color: #fff
 }
-.input_valor p{
-    font-size: 14px;
-    margin-top: 30px
+.inputOperacaoJs input::placeholder{
+    color: #FFF;
+   font-size: 0.9rem
 }
-.input_valor p > i{
-    margin-left: 0.5rem
+.operacao h1{
+    padding-top: 20px;
+    background-color: #fff;
+    padding: 10px;
+    clip-path: polygon(2% 2%, 98% 4%, 96% 97%, 0 100%);
+    color: #1C99E0;
+    text-align: center;
+    margin-bottom: 4rem
 }
-.escolha_operacao{
-    margin-top: 30px;
+
+.operacao button{
+    border: 0;
+    background-color: #fff;
+    width: 12rem;
+    font-size: 16px;
+    padding: 5px 0;
+    border-radius: 20px;
+    margin-top: 50px;
+    color: #1C99E0;
 }
-button{
+.operaçoes{
+    display: grid;
+    grid-template-columns: repeat(2 , auto);
+    gap : 20px
+}
+.operaçoes button{
     background-color: #247BA0;
     border: 0;
-    color: #E8F1F3;
-    padding: 5px 10px;
     border-radius: 5px;
-    max-width: 100px;
+    color: #fff;
+    padding: 5px 5px
 }
-button:hover{
-    transform: scale(1.2)
+.operaçoes button:hover{
+    transform: scale(1.1);
+}
+.operacao h3{
+    color: #fff;
+    font-size: 20px
+}
+p{
+    color: #fff
 }

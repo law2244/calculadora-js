@@ -9,32 +9,48 @@
     <script src="https://kit.fontawesome.com/d9157b0d94.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1> Calculadora</h1>
-    <br>
-    <br>
-    <div class="input_valor" >
-        <p> 
-         clique para excluir resultados   <i class="fa-solid fa-x"></i> 
-        </p>
+    <div class="operacao">
+        <h1>
+            <span>
+                calculadora
+            </span>
+        </h1>
+        <div class="inputOperacao">
+            <input type="number" 
+            class="input1"/>
+
+            <input type="number" 
+            style="display: block"
+            class="input2"/>
+        </div>
+        
+        <button class="resultado">
+            resultado
+        </button>
         <h3>
-            Escolha uma <br> <span> operação  matematica </span> 
+            escolha uma operacão
         </h3>
     </div>
-    <div class="escolha_operacao">
 
-
-        <button onclick="potencição()" class="botão_potencicao">potencição </button>
-
-        <button onclick="soma()" class="botao_soma">soma</button>
-
-        <button onclick="sobtracao()" class="botao_subtracao">subtração</button> 
-
-        <button onclick="multiplicacao()" class="botao_multiplicacao"> multiplicação </button>
-
-        <button onclick="divisao()" class="bottao_divisao"> divisão </button>
-
-        
-
+    <div class="operaçoes">
+        <button class="soma">
+            soma
+        </button >
+        <button class="subtração">
+            subtração
+        </button>
+        <button class="multiplicaçao">
+            multiplicação
+        </button>
+        <button class="divisao">
+            divisão
+        </button>
+        <button class="potenciacao">
+            potenciação
+        </button>
+        <button class="radiacao">
+            raiz quadrada
+        </button>
     </div>
 
 
